@@ -19,6 +19,18 @@ body{
     color: white;
     font-family: "Montserrat";
 }
+
+.result::-webkit-scrollbar{
+    width: 1rem;
+}
+.result::-webkit-scrollbar-track{
+    background: rgb(199, 199, 199);
+}
+.result::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(13, 0, 37), rgb(36, 1, 192));
+    border-radius: 4px;
+}
+
 .generator{
     min-width: 30%;
     height: 80%;
@@ -32,10 +44,14 @@ body{
 }
 .result{
     width: 100%;
+    color: white;
+    font-size: 16px;
     padding: 1.5rem 1.5rem;
     background: rgb(0, 0, 78);
     margin: 2rem 0 2rem;
+    resize: none;
 }
+
 h1{
     text-align: center;
 }
